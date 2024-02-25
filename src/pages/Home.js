@@ -141,7 +141,7 @@ const Home = () => {
 
               <div className='w-11/12 max-w-maxContent flex flex-col items-center justify-between 
                 gap-5 mx-auto'>
-                  <div className='flex flex-row gap-5 mb-10 mt-[95px]'>
+                  <div className='flex flex-row gap-5 mb-10 mt-[95px] justify-center'>
                       <div>
                         Get the Skills you need for a 
                         <HighlightText text={"Job that is in demand"}/>
