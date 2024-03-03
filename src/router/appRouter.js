@@ -6,6 +6,7 @@ import Signup from "../pages/Signup";
 import ForgotPassword from "../pages/ForgotPassword"
 import UpdatePassword from "../pages/UpdatePassword";
 import VerifyEmail from "../pages/VerifyEmail";
+import Dashboard from "../pages/Dashboard";
 const appRouter = createBrowserRouter([{
     element : <App/>,
     path : "/",
@@ -31,6 +32,9 @@ const appRouter = createBrowserRouter([{
         },        {
             element : <VerifyEmail/>,
             path : "/verify-email"
+        },        {
+            element : <Dashboard/>,
+            path : "/my-profile"
         },
 
     ]
