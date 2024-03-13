@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import { RouterProvider } from "react-router-dom";
+import { BrowserRouter, RouterProvider } from "react-router-dom";
 import appRouter from "./router/appRouter";
 import { Provider } from "react-redux";
 import appStore from "./redux/appStore";
@@ -12,10 +12,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
      <Provider store={appStore}>
-      <RouterProvider router={appRouter}>
-         <App />
-         <Toaster/>
-      </RouterProvider> 
+         <BrowserRouter>
+            <App />
+            <Toaster/>
+         </BrowserRouter>   
       </Provider>   
   </React.StrictMode>
 );

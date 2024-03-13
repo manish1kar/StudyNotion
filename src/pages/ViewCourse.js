@@ -10,7 +10,7 @@ import {
   setCourseSectionData,
   setEntireCourseData,
   setTotalNoOfLectures,
-} from "../slices/viewCourseSlice"
+} from "../redux/viewCourseSlice"
 
 export default function ViewCourse() {
   const { courseId } = useParams()
