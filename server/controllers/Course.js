@@ -11,7 +11,6 @@ exports.createCourse = async (req, res) => {
   try {
     // Get user ID from request object
     const userId = req.user.id
-
     // Get all required fields from request body
     let {
       courseName,

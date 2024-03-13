@@ -24,7 +24,6 @@ const Navbar = () => {
     const fetchSubLink = async() => {
         try{
             const result = await apiConnector("GET", categories.CATEGORIES_API);
-            console.log(result)
             setSubLinks(result?.data?.data);
         }catch(error){
             console.log(error);
@@ -66,7 +65,7 @@ const Navbar = () => {
                                             {
                                                 subLinks?.length ? (
                                                     subLinks.map((link, index)=>(
-                                                        <Link to={"/"} key={index}>
+                                                        <Link to={"/catalog/"+link.name} key={index}>
                                                             <p className='hover:bg-richblack-50 px-2'>{link.name}</p>
                                                         </Link>
                                                     ))
